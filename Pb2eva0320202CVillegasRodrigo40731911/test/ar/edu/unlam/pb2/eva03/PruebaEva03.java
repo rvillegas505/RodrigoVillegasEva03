@@ -64,7 +64,7 @@ public class PruebaEva03 {
 		assertEquals((Integer) 10, actual.getCantidadSocios());		
 	}
 	
-	/*@Test (expected = NoEstaPreparado.class)
+	@Test (expected = NoEstaPreparado.class)
 	public void  queUnCorredorNoSePuedaInscribirEnUnaCarreraDeNatacion () throws NoEstaPreparado{	
 		// En las carreras de natación sólo pueden inscribirse los que sean INadador
 		Deportista celeste = new Corredor(1000, "Celeste", 10000);
@@ -75,7 +75,7 @@ public class PruebaEva03 {
 		assertNotEquals((Integer)1, actual.inscribirEnEvento("Maraton de aguas abiertas", celeste));		
 	}
 	
-	@Test (expected = NoEstaPreparado.class)
+	/*@Test (expected = NoEstaPreparado.class)
 	public void  queUnCorredorNoSePuedaInscribirEnUnTriatlon () throws NoEstaPreparado{		
 		// En los triatlones sólo pueden inscribirse los que sean INadador & ICiclista
 		Deportista celeste = new Corredor(1000, "Celeste", 10000);
