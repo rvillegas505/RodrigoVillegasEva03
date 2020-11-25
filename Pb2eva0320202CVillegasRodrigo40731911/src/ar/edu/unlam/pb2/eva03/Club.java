@@ -6,6 +6,8 @@ import java.util.Map;
 import java.util.Set;
 
 import ar.edu.unlam.pb2.eva03.enumeradores.TipoDeEvento;
+import ar.edu.unlam.pb2.eva03.interfaces.ICorredor;
+import ar.edu.unlam.pb2.eva03.interfaces.INadador;
 
 public class Club {
 
@@ -35,6 +37,18 @@ public class Club {
 		competencias.put(tipoevento, new Evento(tipoevento));
 		
 	}
+
+
+	public Object inscribirEnEvento(String nevento, Deportista depor) throws NoEstaPreparado {
+		
+		if (depor instanceof ICorredor) {
+			throw new NoEstaPreparado("no esta preparado");
+		
+			
+		}
+		throw new NoEstaPreparado("no esta preparado");
+	}
+	
 
 	/*public void crearEvento(TipoDeEvento tipoevento, String string) {
 		competencias2.put(tipoevento, string);
