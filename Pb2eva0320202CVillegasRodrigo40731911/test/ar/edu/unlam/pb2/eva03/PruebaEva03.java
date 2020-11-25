@@ -75,7 +75,7 @@ public class PruebaEva03 {
 		assertNotEquals((Integer)1, actual.inscribirEnEvento("Maraton de aguas abiertas", celeste));		
 	}
 	
-	/*@Test (expected = NoEstaPreparado.class)
+	@Test (expected = NoEstaPreparado.class)
 	public void  queUnCorredorNoSePuedaInscribirEnUnTriatlon () throws NoEstaPreparado{		
 		// En los triatlones sólo pueden inscribirse los que sean INadador & ICiclista
 		Deportista celeste = new Corredor(1000, "Celeste", 10000);
@@ -95,5 +95,5 @@ public class PruebaEva03 {
 		actual.crearEvento(TipoDeEvento.CARRERA_42K, "Maraton de New York");
 		
 		assertEquals((Integer)1, actual.inscribirEnEvento("Maraton de New York", celeste));			
-	}*/
+	}
 }

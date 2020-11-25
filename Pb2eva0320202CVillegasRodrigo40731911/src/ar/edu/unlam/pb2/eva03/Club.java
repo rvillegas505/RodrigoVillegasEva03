@@ -13,6 +13,7 @@ public class Club {
 	private String nombre;
 	private Set<Deportista> socios =new HashSet <Deportista>();
 	private Map<TipoDeEvento, Evento> competencias = new HashMap <TipoDeEvento, Evento>();
+	private Map<TipoDeEvento, String> competencias2 = new HashMap <TipoDeEvento, String>();
 	
 	public Club (String nombre) {
 		this.nombre=nombre;
@@ -30,15 +31,18 @@ public class Club {
 	}
 
 
-	public void crearEvento(TipoDeEvento tipoevento, Evento evento) {
-		competencias.put(tipoevento, evento);
+	public void crearEvento(TipoDeEvento tipoevento, String nombre) {
+		competencias.put(tipoevento, new Evento(tipoevento));
 		
 	}
 
+	/*public void crearEvento(TipoDeEvento tipoevento, String string) {
+		competencias2.put(tipoevento, string);
+		
+	}*/
 
-	public Object inscribirEnEvento(String string, Deportista celeste) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	/*public Object inscribirEnEvento(String string, Deportista celeste) {
+		
+	}*/
 	
 }
