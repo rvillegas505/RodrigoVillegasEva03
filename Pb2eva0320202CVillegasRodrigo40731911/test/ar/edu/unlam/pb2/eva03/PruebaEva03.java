@@ -44,7 +44,7 @@ public class PruebaEva03 {
 		assertEquals((Integer)4, nuevo.getNumeroDeSocio());
 	}
 	
-	/*@Test
+	@Test
 	public void  queSePuedanIncorporarDistintosDeportistas() {
 		// El número de socio no se puede repetir
 		Club actual = new Club("CARP");
@@ -54,8 +54,8 @@ public class PruebaEva03 {
 		actual.agregarDeportista(new Corredor(1002, "Jorge", 21000));
 		actual.agregarDeportista(new Nadador(1003, "Lucrecia", "Pecho"));
 		actual.agregarDeportista(new Triatleta(1004, "Tamara", "Olimpico", TipoDeBicicleta.RUTA));
-		actual.agregarDeportista(new Ciclista(1005, "Alberto", "Mountain"));
-		actual.agregarDeportista(new Ciclista(1006, "Domingo", "BMX"));
+		actual.agregarDeportista(new Ciclista(1005, "Alberto", TipoDeBicicleta.MOUNTAIN));
+		actual.agregarDeportista(new Ciclista(1006, "Domingo", TipoDeBicicleta.BMX));
 		actual.agregarDeportista(new Corredor(1007, "Luciana", 10000));
 		actual.agregarDeportista(new Nadador(1008, "Luna", "Crol"));
 		actual.agregarDeportista(new Nadador(1009, "Victor", "Mariposa"));
@@ -64,7 +64,7 @@ public class PruebaEva03 {
 		assertEquals((Integer) 10, actual.getCantidadSocios());		
 	}
 	
-	@Test (expected = NoEstaPreparado.class)
+	/*@Test (expected = NoEstaPreparado.class)
 	public void  queUnCorredorNoSePuedaInscribirEnUnaCarreraDeNatacion () throws NoEstaPreparado{	
 		// En las carreras de natación sólo pueden inscribirse los que sean INadador
 		Deportista celeste = new Corredor(1000, "Celeste", 10000);
