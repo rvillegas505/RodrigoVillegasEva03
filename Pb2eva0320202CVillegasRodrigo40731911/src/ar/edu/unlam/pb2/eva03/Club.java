@@ -50,10 +50,7 @@ public class Club {
 	}
 	
 
-	/*public void crearEvento(TipoDeEvento tipoevento, String string) {
-		competencias2.put(tipoevento, string);
-		
-	}*/
+	
 
 	/*public Object inscribirEnEvento(String string, Deportista celeste) {
 		
