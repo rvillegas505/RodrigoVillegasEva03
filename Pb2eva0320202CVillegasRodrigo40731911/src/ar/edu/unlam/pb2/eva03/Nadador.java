@@ -1,36 +1,15 @@
 package ar.edu.unlam.pb2.eva03;
 
-public class Nadador {
+import ar.edu.unlam.pb2.eva03.interfaces.INadador;
 
-	private Integer numeroDeSocio;
-	private String nombre;
+public class Nadador extends Deportista implements INadador {
+
+	
 	private String estiloPreferido;
-	
+
 	public Nadador(Integer numeroDeSocio, String nombre, String estiloPreferido) {
-		
-		this.numeroDeSocio = numeroDeSocio;
-		this.nombre = nombre;
+		super(numeroDeSocio, nombre);
 		this.estiloPreferido = estiloPreferido;
-	}
-
-	
-	public Integer getNumeroDeSocio() {
-		return numeroDeSocio;
-	}
-
-	
-	public void setNumeroDeSocio(Integer numeroDeSocio) {
-		this.numeroDeSocio = numeroDeSocio;
-	}
-
-	
-	public String getNombre() {
-		return nombre;
-	}
-
-	
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
 	}
 
 	
@@ -38,10 +17,16 @@ public class Nadador {
 		return estiloPreferido;
 	}
 
-	
+
 	public void setEstiloPreferido(String estiloPreferido) {
 		this.estiloPreferido = estiloPreferido;
 	}
+	
+	
+	
+	
+
+	
 	
 	
 	

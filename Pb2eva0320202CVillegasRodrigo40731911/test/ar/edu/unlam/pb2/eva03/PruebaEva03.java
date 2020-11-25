@@ -29,9 +29,9 @@ public class PruebaEva03 {
 	
 	@Test
 	public void  queSePuedaCrearUnCiclista() {
-		Ciclista nuevo = new Ciclista(3, "Enzo", "Ruta");
+		Ciclista nuevo = new Ciclista(3, "Enzo", TipoDeBicicleta.RUTA);  //Antes era STRING ahora ENUM
 
-		assertEquals("Ruta", nuevo.getTipoDeBicicleta());
+		assertEquals(TipoDeBicicleta.RUTA, nuevo.getTipoDeBicicleta());
 		assertEquals((Integer) 3, nuevo.getNumeroDeSocio());
 	}
 
@@ -44,7 +44,7 @@ public class PruebaEva03 {
 		assertEquals((Integer)4, nuevo.getNumeroDeSocio());
 	}
 	
-	@Test
+	/*@Test
 	public void  queSePuedanIncorporarDistintosDeportistas() {
 		// El número de socio no se puede repetir
 		Club actual = new Club("CARP");
@@ -64,7 +64,7 @@ public class PruebaEva03 {
 		assertEquals((Integer) 10, actual.getCantidadSocios());		
 	}
 	
-	/*@Test (expected = NoEstaPreparado.class)
+	@Test (expected = NoEstaPreparado.class)
 	public void  queUnCorredorNoSePuedaInscribirEnUnaCarreraDeNatacion () throws NoEstaPreparado{	
 		// En las carreras de natación sólo pueden inscribirse los que sean INadador
 		Deportista celeste = new Corredor(1000, "Celeste", 10000);
